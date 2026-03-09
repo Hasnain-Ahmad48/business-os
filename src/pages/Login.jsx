@@ -1,14 +1,15 @@
-import { Database } from "lucide-react";
+import {Airplay, Database, Github} from "lucide-react";
 
 export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
-      
       <div className="w-105 bg-white border border-border rounded-lg shadow-sm p-8">
-
         {/* Logo */}
         <div className="flex items-center justify-center gap-2 mb-6">
-          <Database className="text-primary" size={28} />
+          <Database
+            className="text-primary"
+            size={28}
+          />
           <span className="text-xl font-semibold text-primary ">
             BusinessOS
           </span>
@@ -25,7 +26,6 @@ export default function Login() {
 
         {/* Form */}
         <form className="space-y-4">
-
           {/* Email */}
           <div>
             <label className="block text-sm font-medium text-textPrimary mb-1">
@@ -52,16 +52,17 @@ export default function Login() {
 
           {/* Remember + Forgot */}
           <div className="flex items-center justify-between text-sm">
-
             <label className="flex items-center gap-2 text-textSecondary">
               <input type="checkbox" />
               Remember me
             </label>
 
-            <a href="#" className="text-primary hover:underline">
+            <a
+              href="#"
+              className="text-primary hover:underline"
+            >
               Forgot password?
             </a>
-
           </div>
 
           {/* Button */}
@@ -71,7 +72,6 @@ export default function Login() {
           >
             Sign In
           </button>
-
         </form>
 
         {/* Signup */}
@@ -87,17 +87,18 @@ export default function Login() {
 
         {/* Social Buttons */}
         <div className="grid grid-cols-2 gap-4">
-
           <button className="border border-border rounded-md h-10 flex items-center justify-center text-sm">
+            <Airplay
+              className="text-primary"
+              size={15}
+            />
             Google
           </button>
 
           <button className="border border-border rounded-md h-10 flex items-center justify-center text-sm">
-            GitHub
+         <Github  size={15}/>   GitHub
           </button>
-
         </div>
-
       </div>
     </div>
   );
